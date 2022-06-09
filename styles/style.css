@@ -1,0 +1,405 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+main {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.header {
+    width: 100%;
+    padding: 40px 0;
+}
+.site-logo {
+    color: #000;
+    font-size: 36px;
+    line-height: 54px;
+    margin-right: auto;
+    transition: all 0.5s;
+}
+.site-logo:hover{
+    transform: scale(1.2);
+}
+.header-nav {
+    display: flex;
+    margin-right: auto;
+}
+.nav-item {
+    list-style: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    transition: all 0.5s;
+}
+.nav-item a{
+    color: #263238;
+}
+.nav-item:not(:last-child){
+    margin-right: 36px;
+}
+.nav-item:hover{
+    transform: scale(1.2);
+}
+.header-btn {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000;
+    padding: 17px 55px;
+    border: 2px solid #263238;
+    border-radius: 5px;
+}
+
+/* HERO SECTION STYLES */
+.hero {
+    width: 100%;
+    margin-bottom: 147px;
+}
+.hero-container{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.hero-text-wrapper {
+    margin-right: auto;
+}
+.hero-main-title{
+    display: flex;
+    align-items: center;
+}
+.hero-title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 80px;
+    color: #000;
+    margin-right: 38px;
+    margin-bottom: 40px;
+}
+.hero-text {
+    max-width: 600px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #8F95A5;
+    margin-bottom: 61px;
+}
+.hero-btn {
+    display: inline-block;
+    padding: 32px 117px;
+    background: #263238;
+    border-radius: 15px;
+    font-size: 36px;
+    line-height: 54px;
+    color: #fff;
+}
+.hero-img{
+    width: 100%;
+    max-width: 661px;
+}
+
+/* SKILLS SECTION STYLES */
+.skills {
+    width: 100%;
+    margin-bottom: 282px;
+}
+.skills-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    margin-bottom: 96px;
+}
+.skills-cards {
+    height: 900px;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        'speaking writing reading'
+        'speaking listening listening';
+    grid-gap: 20px;
+}
+.skills-card{
+    /* width: 435px; */
+    background: #F5F5F5;
+    border-radius: 10px;
+    padding-left: 41px;   
+    padding-right: 41px;   
+    padding-bottom: 44px;
+}
+.skills-speaking-card{
+    grid-area: speaking;
+    padding-top: 35px;
+}
+.skills-writing-card {
+    grid-area: writing;
+}
+.skills-writing-card img{
+    float: right;
+    margin-right: -35px;
+    margin-bottom: -40px;
+}
+.skills-writing-card .card-title{
+    
+}
+.skills-reading-card{
+    grid-area: reading;
+}
+.skills-listening-card{
+    grid-area: listening;
+    padding: 44px 25px 44px 44px;
+}
+.skills-listening-card img{
+    float: right;
+}
+.skills-card-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 80px;
+    color: #263238;
+}
+.skills-card-text {
+    width: 100%;
+    max-width: 347px;
+    word-wrap: break-word;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 33px;
+    color: #8F95A5;
+}
+.skills-card-btn {
+    display: inline-block;
+    padding: 15px 31px;
+    background: #263238;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+}
+
+/* ABOUTUS SECTION STYLES */
+
+.aboutus {
+    width: 100%;
+    margin-bottom: 188px;
+}
+.aboutus-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.aboutus-text-wrapper {
+}
+.aboutus-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    color: #000;
+    margin-bottom: 23px;
+}
+.aboutus-text {
+    width: 100%;
+    max-width: 635px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8F95A5;
+}
+.aboutus-data {
+    width: 100%;
+    max-width: 635px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.aboutus-data-item{
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+}
+.aboutus-data-item p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8F95A5;
+}
+
+/* PRICING SECTION STYLES */
+
+.pricing {
+    width: 100%;
+    margin-bottom: 250px;
+}
+.pricing-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    color: #000;
+    margin-bottom: 70px;
+}
+.pricing-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.pricing-card {
+    width: 410px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pricing-card:nth-child(1) .pricing-card-img {
+    margin-bottom: 40px;
+}
+.pricing-card:nth-child(2) .pricing-card-img {
+    margin-bottom: 66px;
+}
+.pricing-card:nth-child(3) .pricing-card-img {
+    margin-bottom: 9px;
+}
+.pricing-card-text-wrapper{
+    width: 100%;
+}
+.pricing-card-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 48px;
+    color: #263238;
+    margin-bottom: 19px;
+}
+.pricing-card-text {
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8F95A5;
+    margin-bottom: 59px;
+}
+.pricing-card:nth-child(1) .pricing-card-text{
+    margin-bottom: 29px;
+}
+.pricing-card-cost {
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EEEEEE;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #546269;
+}
+.pricing-card-cost p{
+    font-size: 30px;
+    line-height: 45px;
+    color: #263238;
+    margin-right: 8px;
+}
+
+/* CONTACT SECTION STYLES */
+
+.contact {
+    width: 100%;
+    margin-bottom: 130px;
+}
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-text-wrapper {
+    width: 100%;
+    max-width: 780px;
+}
+.contact-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    color: #000;
+    margin-bottom: 37px;
+}
+.contact-text {
+    font-size: 20px;
+    line-height: 30px;
+    color: #8F95A5;
+    margin-bottom: 50px;
+}
+.contact-form {
+    width: 100%;
+}
+#contact-input{
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid #8F95A5;
+    border-radius: 10px;
+    padding: 28px 33px;
+    margin-right: 12px;
+    line-height: 24px;
+}
+.contact-btn {
+    background: #263238;
+    border-radius: 10px;
+    padding: 25px 81px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* FOOTER SECTION STYLES */
+
+.footer {
+    width: 100%;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #C4C4C4;
+    padding: 30px 0;
+}
+.footer-links {
+    display: flex;
+}
+.footer-links-item {
+    list-style-type: none;
+    transition: all 0.5s;
+}
+.footer-links-item:not(:last-child){
+    margin-right: 50px;
+}
+.footer-links-item a{
+    font-size: 24px;
+    line-height: 36px;
+    color: #8F95A5;
+}
+.footer-links-item:hover{
+    transform: scale(1.2);
+}
